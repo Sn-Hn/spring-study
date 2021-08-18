@@ -32,4 +32,13 @@ public class OrderServiceTest {
         assertThat(order.getDiscountPrice()).isEqualTo(1000);
 
     }
+
+    // 값을 넣어줄 방법이 없다.
+    // setter를 따로 만들어줘야 한다.
+    // 그럴바에 수정자에 Autowired를 넣어주는 것이 낫다.
+    @Test
+    void fieldInjectionTest() {
+//        OrderServiceImpl orderService = new OrderServiceImpl();
+//        orderService.createOrder(1L, "itemA", 10000);
+    }
 }
